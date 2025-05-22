@@ -151,7 +151,68 @@
     font-weight: bold;
     color: #ff6b6b;
 }
+.weight-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
 
+.weight-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.weight-price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.weight-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.price-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+}
+
+.discount-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
     </style>
 </head>
 <body>
@@ -165,7 +226,7 @@
             <h2>Welcome to Dream Bakers & Fast Foods</h2>
             <p>We are proud manufacturers of delicious cakes, bakery items, and fast food.
             Place your order today and enjoy our delectable treats delivered to your doorstep!</p>
-            <p>We accept orders within <span class="radius-highlight">5km radius</span> for quick and fresh delivery.</p>
+            <p>We accept orders manufacturers items. contact +91-99999999</p>
         </section>
         
         <section class="menu-section">
@@ -177,9 +238,21 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Chocolate Truffle Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹850</span>
-                            <span class="discount-price">₹750</span>
+                        <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,9 +262,21 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Red Velvet Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹800</span>
-                            <span class="discount-price">₹699</span>
+                        <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,9 +287,21 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Butterscotch Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹600</span>
-                            <span class="discount-price">₹499</span>
+                       <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,36 +312,82 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Mango Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹550</span>
-                            <span class="discount-price">₹475</span>
+                       <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-               
-                <div class="menu-item">
-                    <div class="item-image">
-                        <img src="image\products\black_forest.jpg" alt="Black Forest Cake">
-                    </div>
-                    <div class="item-details">
-                        <div class="item-name">Black Forest Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹600</span>
-                            <span class="discount-price">₹450
-                                
-                            </span>
-                        </div>
+               <div class="menu-item">
+    <div class="item-image">
+        <img src="image\products\black_forest.jpg" alt="Black Forest Cake">
+    </div>
+    <div class="item-details">
+        <div class="item-name">Black Forest Cake</div>
+        <div class="weight-options">
+            <div class="weight-option">
+                <div class="weight-price-info">
+                    <span class="weight-label">Half kg</span>
+                    <div class="price-container">
+                        <span class="original-price">₹600</span>
+                        <span class="discount-price">₹450</span>
                     </div>
                 </div>
+                <a href="https://api.whatsapp.com/send/?phone=919884704132&text=Hi%21+I+would+like+to+order%3A%0A%0AItem%3A+Black+Forest+Cake%0AWeight%3A+Half+kg%0APrice%3A+%E2%82%B9450+%28Discounted+from+%E2%82%B9600%29%0A%0APlease+confirm+my+order.&type=phone_number&app_absent=0" 
+                   class="whatsapp-btn" target="_blank">
+                    Order on WhatsApp
+                </a>
+            </div>
+            <div class="weight-option">
+                <div class="weight-price-info">
+                    <span class="weight-label">One kg</span>
+                    <div class="price-container">
+                        <span class="original-price">₹1200</span>
+                        <span class="discount-price">₹900</span>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send/?phone=919884704132&text=Hi%21+I+would+like+to+order%3A%0A%0AItem%3A+Black+Forest+Cake%0AWeight%3A+Half+kg%0APrice%3A+%E2%82%B9450+%28Discounted+from+%E2%82%B9600%29%0A%0APlease+confirm+my+order.&type=phone_number&app_absent=0" 
+                   class="whatsapp-btn" target="_blank">
+                    Order on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                
                 <div class="menu-item">
                     <div class="item-image">
                         <img src="image\products\white_forest.jpg" alt="White Forest Cake">
                     </div>
                     <div class="item-details">
                         <div class="item-name">White Forest Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹700</span>
-                            <span class="discount-price">₹599</span>
+                        <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,9 +398,21 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Nattu Bubble Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹750</span>
-                            <span class="discount-price">₹649</span>
+                       <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>         
@@ -267,9 +422,21 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Vancho Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹750</span>
-                            <span class="discount-price">₹649</span>
+                       <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>   
@@ -279,9 +446,21 @@
                     </div>
                     <div class="item-details">
                         <div class="item-name">Rich Plum Cake</div>
-                        <div class="price-container">
-                            <span class="original-price">₹750</span>
-                            <span class="discount-price">₹649</span>
+                       <div class="weight-options">
+                            <div class="weight-option">
+                                <span class="weight-label">Half kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹600</span>
+                                    <span class="discount-price">₹450</span>
+                                </div>
+                            </div>
+                            <div class="weight-option">
+                                <span class="weight-label">One kg</span>
+                                <div class="price-container">
+                                    <span class="original-price">₹1200</span>
+                                    <span class="discount-price">₹900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div> 
